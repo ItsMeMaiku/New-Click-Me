@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+			<meta charset="UTF-8/>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			<title>Demo App</title>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+p{
+    font-size: 15px;
+}
+
+</style>
+</head>
+<body align="center">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <p>Push <kbd>Click Me!</kbd> to count.</p>
+    </div>
+
+<script>
+var x=0;
+function  Clickme(){
+x=x+1;
+if (x > 20) {
+    x=0;
+	alert("You exceed the number!");
+}
+document.getElementById("display").innerHTML=x
+}
+</script>
+<div class="panel-body">
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="Clickme()">Click Me! <span class="glyphicon glyphicon-hand-left"></span></button>
+
+<p class="bg-primary"id="display"></p>
+</div>
+</body>
+</html>
+
